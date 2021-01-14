@@ -1,16 +1,22 @@
-header{
-    background-color:#fff5ea;
-    font-family: julius sans one;
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+
+html {
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-#container{
-    width: 400px;
-    height: 300px;
+.font-sub {
+    font-family: 'Archivo', sans-serif;
+}
+
+body {
+    position: relative;
+}
+header {
+    position: fixed;
+    width: 100%;
+}
+
+#contactBtn {
     background-color: #f7dad9;
-}
-
-#container1{
-    width: 300px;
-    height: 250px;
-    background-color: #d6d2c4;
 }
