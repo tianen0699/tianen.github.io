@@ -2,3 +2,15 @@ header{
     background-color:#fff5ea;
     font-family: julius sans one;
 }
+
+#container{
+    width: 400px;
+    height: 300px;
+    background-color: #f7dad9;
+}
+
+#container1{
+    width: 300px;
+    height: 250px;
+    background-color: #d6d2c4;
+}
