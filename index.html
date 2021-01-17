@@ -26,7 +26,7 @@
                 </nav>
             </div>
         </header>
-        <section class="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center h-full p-8">
+        <section class="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center h-full p-4">
             <article>
                 <div class="text-center md:text-left">
                     <h1 class="text-8xl">HELLO</h1>
@@ -45,25 +45,58 @@
 
         </section>
     </main>
-    <main class="h-screen" style="background: rgba(247,218,217, 0.5);">
-        <section>
-            <div>
-                <h2>About</h2>
-            </div> 
-            <article>
-                <div class="w-1/2 mx-auto">
-                    <img src="image/Group 17.png" class="w-full h-full object-cover">
-                </div>
-            </article>
-            <article>
-                <div >
-                    <p class="font-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
-                    <div class="mt-10">
-                        <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
-                    </div>
-                </div>
-            </article>
+    <main class="md:h-screen py-20 md:py-0" style="background: rgba(247,218,217, 0.5);">
+        <section class="container px-4 mx-auto flex justify-center items-center h-full">
+            <section>
+                <h2 class="text-5xl text-center md:text-left">About</h2>
+                <section class="grid grid-cols-1 md:grid-cols-11 gap-20 md:gap-10 mt-20">
+                    <article class="md:col-span-5">
+                        <div class="w-full flex justify-center md:block">
+                            <img src="image/Group 17.png" class="w-1/2 md:w-full h-full object-cover">
+                        </div>
+                        <p class="font-sub mt-8 text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
+                        <div class="mt-8 md:mt-10 flex justify-center">
+                            <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
+                        </div>
+                    </article>
+                    <article class="hidden md:flex justify-center items-center pb-40">
+                        <div class="h-full w-0.5 bg-black bg-opacity-500"></div>
+                    </article>
+                    <article class="md:col-span-5">
+                        <div class="w-full flex justify-center md:w-full xl:h-96 lg:h-72 h-40">
+                            <div class="md:w-full w-1/2 bg-gray-500"></div>
+                        </div> <!-- This is the video! -->
+                        <p class="font-sub mt-2 text-center font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                </section>
+            </section>
         </section>
+        <!-- <h2 class="container mx-auto py-10">About</h2>
+        <section class="container mx-auto py-10">
+            <section class="flex justify-between items-center h-full">
+                <section>
+                    <article>
+                        <div class="w-1/2 mx-auto">
+                            <img src="image/Group 17.png" class="w-full h-full object-cover">
+                        </div>
+                    </article>
+                    <article>
+                        <div >
+                            <p class="font-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
+                            <div class="mt-10">
+                                <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section>
+                    <article>
+                        <div></div>
+                        <p class="font-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                </section>
+            </section>
+        </section> -->
        
     </main>
 </body>
