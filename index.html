@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portoflio</title>
+    <title>Tian En's Portfolio</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/fontawesome.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
-    <main style="background-color:#fff5ea;" class="h-screen">
-        <header style="background-color:#fff5ea;">
-            <div class="container mx-auto flex flex-wrap justify-between p-4">
+    <main style="background-color:#fff5ea;" class="h-screen relative">
+        <header style="background-color:#fff5ea;" class="fixed w-full z-50">
+            <div class="container mx-auto flex flex-wrap justify-between items-center p-4">
                 <p class="text-2xl md:w-auto">Tian En</p>
-                <span class="md:hidden" id="menuBtn">
-                    <i class="fas fa-bars"></i>
+                <span class="md:hidden text-black" id="menuBtn">
+                    <i class="fas fa-chevron-circle-down fa-lg"></i>
                 </span>
-                <nav class="hidden flex-col md:w-1/2 2xl:w-1/3 md:flex md:flex-row justify-between" id="menu">
-                    <a href="#" class="text-lg">About</a>
-                    <a href="#" class="text-lg">Portfolio</a>
-                    <a href="#" class="text-lg">Services</a>
-                    <a href="#" class="text-lg">Contact</a>
+                <nav class="hidden flex-col w-full md:w-1/2 2xl:w-1/3 md:flex md:flex-row justify-center text-center md:text-left md:justify-between" id="menu">
+                    <a href="#about" class="text-lg block md:w-auto py-4 border-b md:border-0">About</a>
+                    <a href="#portfolio" class="text-lg block md:w-auto py-4 border-b md:border-0">Portfolio</a>
+                    <a href="#services" class="text-lg block md:w-auto py-4 border-b md:border-0">Services</a>
+                    <a href="#contact" class="text-lg block md:w-auto pt-4">Contact</a>
                 </nav>
             </div>
         </header>
@@ -45,7 +44,7 @@
 
         </section>
     </main>
-    <main class="md:h-screen py-20 md:py-0" style="background: rgba(247,218,217, 0.5);">
+    <main class="md:h-screen py-20 md:py-0" style="background: rgba(247,218,217, 0.5);" id="about">
         <section class="container px-4 mx-auto flex justify-center items-center h-full">
             <section>
                 <h2 class="text-5xl text-center md:text-left">About</h2>
@@ -71,33 +70,106 @@
                 </section>
             </section>
         </section>
-        <!-- <h2 class="container mx-auto py-10">About</h2>
-        <section class="container mx-auto py-10">
-            <section class="flex justify-between items-center h-full">
-                <section>
-                    <article>
-                        <div class="w-1/2 mx-auto">
-                            <img src="image/Group 17.png" class="w-full h-full object-cover">
+    </main>
+    <main id="about" class="py-20" style="background: rgba(247,218,217, 0.25);">
+        <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">About</h2>
+        <section class="container px-4 mx-auto grid grid-gap-10 grid-cols-1 mt-10">
+            <section class="mb-10">
+                <p class="text-2xl font-medium">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
                         </div>
-                    </article>
-                    <article>
-                        <div >
-                            <p class="font-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
-                            <div class="mt-10">
-                                <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
-                            </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
                         </div>
-                    </article>
-                </section>
-                <section>
-                    <article>
-                        <div></div>
-                        <p class="font-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </article>
-                </section>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </article>
             </section>
-        </section> -->
-       
+            <section class="mb-10">
+                <p class="text-2xl font-medium">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </article>
+            </section>
+            <section class="mb-10">
+                <p class="text-2xl font-medium">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </article>
+            </section>
+            <section>
+                <p class="text-2xl font-medium">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-72 bg-gray-500 w-full"></div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </article>
+            </section>
+        </section>
     </main>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/main.js"></script>
 </html>
