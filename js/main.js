@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initSwipers() {
-    const swiper = new Swiper('.swiper-illustrator', {
-        scrollbar: '.swiper-scrollbar',
+    const swiper = new Swiper('.swiper-container-illustrator', {
+        pagination: '.swiper-pagination-illustrator',
         slidesPerView: 1,
         spaceBetween: 10,
         breakpoints: {
