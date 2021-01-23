@@ -7,6 +7,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script src="js/fontawesome.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
         <header style="background-color:#fff5ea;" class="fixed w-full z-50">
             <div class="container mx-auto flex flex-wrap justify-between items-center p-4">
                 <p class="text-2xl md:w-auto">Tian En</p>
-                <span class="md:hidden text-black" id="menuBtn">
-                    <i class="fas fa-chevron-circle-down fa-lg"></i>
+                <span class="md:hidden text-black w-8 h-8" id="menuBtn">
+                    <img src="image/hamburger.png" alt="hamburger" class="w-full h-full object-cover">
                 </span>
                 <nav class="hidden flex-col w-full md:w-1/2 2xl:w-1/3 md:flex md:flex-row justify-center text-center md:text-left md:justify-between" id="menu">
                     <a href="#about" class="text-lg block md:w-auto py-4 border-b md:border-0">About</a>
@@ -71,12 +72,12 @@
             </section>
         </section>
     </main>
-    <main id="about" class="py-20" style="background: rgba(247,218,217, 0.25);">
+    <main id="portfolio" class="py-20" style="background: rgba(247,218,217, 0.25);">
         <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Portfolio</h2>
         <section class="container px-4 mx-auto grid grid-gap-10 grid-cols-1 mt-10">
             <section class="mb-10">
-                <p class="text-2xl font-medium">Adobe Illustrator</p>
-                <article class="swiper-container swiper-container-illustrator mt-4">
+                <p class="text-2xl font-medium text-center">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
@@ -91,17 +92,15 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="h-72 bg-gray-500 w-full"></div>
+
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination-illustrator"></div>
+                    <div class="swiper-pagination"></div>
                 </article>
             </section>
             <section class="mb-10">
-                <p class="text-2xl font-medium">Adobe Illustrator</p>
-                <article class="swiper-container swiper-container-illustrator mt-4">
+                <p class="text-2xl font-medium text-center">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
@@ -116,17 +115,15 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="h-72 bg-gray-500 w-full"></div>
+
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination-illustrator"></div>
+                    <div class="swiper-pagination"></div>
                 </article>
             </section>
             <section class="mb-10">
-                <p class="text-2xl font-medium">Adobe Illustrator</p>
-                <article class="swiper-container swiper-container-illustrator mt-4">
+                <p class="text-2xl font-medium text-center">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
@@ -141,17 +138,15 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="h-72 bg-gray-500 w-full"></div>
+
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination-illustrator"></div>
+                    <div class="swiper-pagination"></div>
                 </article>
             </section>
             <section>
-                <p class="text-2xl font-medium">Adobe Illustrator</p>
-                <article class="swiper-container swiper-container-illustrator mt-4">
+                <p class="text-2xl font-medium text-center">Adobe Illustrator</p>
+                <article class="swiper-container swiper-illustrator mt-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
@@ -166,18 +161,144 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="h-72 bg-gray-500 w-full"></div>
+
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-pagination-illustrator"></div>
+                    <div class="swiper-pagination"></div>
                 </article>
             </section>
         </section>
     </main>
+    <main class="py-20" style="background: rgba(247,218,217, 0.5);" id="services">
+        <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Services</h2>
+        <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10 text-center lg:text-left">
+            <article class="bg-white">
+                <div class="h-72 bg-gray-500 w-full">
+
+                </div>
+                <div class="m-8">
+                    <h4 class="text-2xl">animations</h4>
+                    <p class="font-sub mt-4 font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
+                    <div class="mt-8">
+                        <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-white">
+                <div class="h-72 bg-gray-500 w-full">
+
+                </div>
+                <div class="m-8">
+                    <h4 class="text-2xl">video editing</h4>
+                    <p class="font-sub mt-4 font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
+                    <div class="mt-8">
+                        <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-white">
+                <div class="h-72 bg-gray-500 w-full">
+
+                </div>
+                <div class="m-8">
+                    <h4 class="text-2xl">designing</h4>
+                    <p class="font-sub mt-4 font-thin text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo arcu turpis, sit amet ornare velit condimentum sed. Etiam eget ante sagittis, luctus lectus id, porta lacus. Curabitur maximus pharetra ullamcorper.</p>
+                    <div class="mt-8">
+                        <a id="contactBtn" href="#" class="px-12 py-3 border-black border text-lg">contact me</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <main id="contact" class="py-20" style="background: rgba(247,218,217, 0.25);">
+        <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Contact</h2>
+        <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-40 px-40 mt-10">
+            <article class="flex items-center">
+                <div>
+                    <div>
+                        <img src="image/Group 20.png" alt="nothing">
+                    </div>
+                    <p class="font-sub mt-4 font-thin text-lg">email: </p>
+                    <p class="font-sub mt-2 font-thin text-lg">number: </p>
+                    <div class="flex items-center mt-6">
+                        <div class="h-6 w-6 mr-4">
+                            <svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/></svg>
+                        </div>
+                        <div class="h-6 w-6 mr-4">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
+                                    C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
+                                    h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
+                                    c11.028,0,20,8.972,20,20V452z"/></svg>
+                        </div>
+                        <div class="h-6 w-6">
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <form action="">
+                    <div class="flex flex-col">
+                        <label for="name" class="block text-lg">name</label>
+                        <input type="text" id="name" name="name" class="block mt-2 py-1 px-2 text-lg">
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="email" class="block text-lg">email</label>
+                        <input type="email" id="email" name="email" class="block mt-2 py-1 px-2 text-lg">
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="subject" class="block text-lg">subject</label>
+                        <input type="text" id="subject" name="subject" class="block mt-2 py-1 px-2 text-lg">
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="enquiry" class="block text-lg">enquiry type</label>
+                        <select name="enquiry" id="enquiry" class="block mt-2 py-1 px-2 text-lg">
+                            <option value="services" class="font-sub text-lg">Services</option>
+                            <option value="others" class="font-sub text-lg">Others</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="message" class="block text-lg">message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" class="block mt-2 py-1 px-2 text-lg"></textarea>
+                    </div>
+                    <div class="mt-8">
+                        <button id="contactBtn" type="submit" class="px-12 py-3 border-black border text-lg">submit</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer style="background-color: #968c83;" class="text-white py-8">
+        <section class="container mx-auto px-4 lg:flex justify-between items-center">
+            <section class="text-center lg:text-left">
+                <p class="text-2xl">Tian En</p>
+                <article class="flex justify-between lg:justify-start mt-4 flex-wrap md:flex-nowrap">
+                    <a href="#about" class="text-2xl w-1/2 md:w-auto lg:mr-4">about</a>
+                    <a href="#portfolio" class="text-2xl w-1/2 md:w-auto lg:mr-4">portfolio</a>
+                    <a href="#services" class="text-2xl w-1/2 md:w-auto mt-4 md:mt-0 lg:mr-4">services</a>
+                    <a href="#contact" class="text-2xl w-1/2 md:w-auto mt-4 md:mt-0">contact</a>
+                </article>
+            </section>
+            <section class="text-center lg:text-right">
+                <div class="flex justify-center lg:justify-end items-center my-8 lg:my-0">
+                    <div class="h-6 w-6 mr-4">
+                        <svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/></svg>
+                    </div>
+                    <div class="h-6 w-6 mr-4">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
+                                C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
+                                h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
+                                c11.028,0,20,8.972,20,20V452z"/></svg>
+                    </div>
+                    <div class="h-6 w-6">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/></svg>
+                    </div>
+                </div>
+                <p class="mt-4 font-sub text-sm">Copyright © 2020. All Rights Reserved.</p>
+            </section>
+        </section>
+    </footer>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/fontawesome.min.js"></script>
 <script src="js/main.js"></script>
 </html>
