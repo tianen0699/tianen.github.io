@@ -16,3 +16,7 @@ h1, h2, h3, h4, p, a, label {
 .swiper-container-horizontal>.swiper-scrollbar {
     bottom: -.25rem;
 }
+
+.swiper-button-prev, .swiper-button-next {
+    color: black;
+}
