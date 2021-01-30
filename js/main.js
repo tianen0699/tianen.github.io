@@ -23,7 +23,7 @@ function initSwipers() {
             bulletActiveClass: 'opacity-100'
         },
         navigation: {
-            nextEl: 'swiper-button-next-about',
+            nextEl: 'swiper-button-next-illustrator',
             prevEl: 'swiper-button-prev-illustrator'
         },
         slidesPerView: 1,
@@ -38,76 +38,6 @@ function initSwipers() {
             },
         }
     });
-
-    // const swiperIllustrator = new Swiper('.swiper-illustrator', {
-    //     pagination: '.swiper-pagination-illustrator',
-    //     navigation: {
-    //         nextEl: 'swiper-button-next-about',
-    //         prevEl: 'swiper-button-prev-illustrator'
-    //     },
-    //     slidesPerView: 1,
-    //     spaceBetween: 10,
-    //     breakpoints: {
-    //         768: {
-    //             slidesPerView: 2, 
-    //         },
-    //         1024: {
-    //             slidesPerView: 3,
-    //             spaceBetween: 20
-    //         },
-    //         1280: {
-    //             slidesPerView: 4,
-    //             spaceBetween: 30
-    //         }
-    //     }
-    // });
-
-    // const swiperIllustrator = new Swiper('.swiper-illustrator', {
-    //     pagination: '.swiper-pagination-illustrator',
-    //     navigation: {
-    //         nextEl: 'swiper-button-next-about',
-    //         prevEl: 'swiper-button-prev-illustrator'
-    //     },
-    //     slidesPerView: 1,
-    //     spaceBetween: 10,
-    //     breakpoints: {
-    //         768: {
-    //             slidesPerView: 2, 
-    //         },
-    //         1024: {
-    //             slidesPerView: 3,
-    //             spaceBetween: 20
-    //         },
-    //         1280: {
-    //             slidesPerView: 4,
-    //             spaceBetween: 30
-    //         }
-    //     }
-    // });
-
-    // const swiperIllustrator = new Swiper('.swiper-illustrator', {
-    //     pagination: '.swiper-pagination-illustrator',
-    //     navigation: {
-    //         nextEl: 'swiper-button-next-about',
-    //         prevEl: 'swiper-button-prev-illustrator'
-    //     },
-    //     slidesPerView: 1,
-    //     spaceBetween: 10,
-    //     breakpoints: {
-    //         768: {
-    //             slidesPerView: 2, 
-    //         },
-    //         1024: {
-    //             slidesPerView: 3,
-    //             spaceBetween: 20
-    //         },
-    //         1280: {
-    //             slidesPerView: 4,
-    //             spaceBetween: 30
-    //         }
-    //     }
-    // });
-    
 }
 
 function initMenu() {
@@ -117,4 +47,24 @@ function initMenu() {
     menuBtn.addEventListener('click', ()=> {
         menu.classList.toggle("hidden");
     })
+}
+
+function showModal(x) {
+    console.log(x);
+    let modal = getModal();
+    let title = document.getElementById('modalTitle');
+    let description = document.getElementById('modalDescription');
+
+    title.innerHTML = "Lorem Ipsum";
+    description.innerHTML = "Lorem Ipsum Dolor Sit Amet";
+    modal.classList.toggle("hidden");
+}
+
+function hideModal() {
+    let modal = getModal();
+    modal.classList.toggle("hidden");
+}
+
+function getModal() {
+    return document.getElementById('modal');
 }

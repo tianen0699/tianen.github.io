@@ -85,14 +85,29 @@
             </section>
         </section>
     </main>
-    <main id="portfolio" class="py-20" style="background: rgba(247,218,217, 0.25);">
+    <main id="portfolio" class="py-20 relative" style="background: rgba(247,218,217, 0.25);">
+        <section id="modal" class="hidden fixed top-0 left-0 h-screen w-screen bg-black opacity-75 z-50 flex items-center">
+            <button onclick="hideModal()" class="absolute text-5xl text-white top-16 right-16">&times;</button>
+            <article class="container mx-auto grid grid-cols-2 gap-20 h-3/4">
+                <div class="flex items-center">
+                    <div class="h-72 bg-white w-full"></div>
+                </div>
+                <!-- <img id="modalImg"> -->
+                <div class="flex items-center">
+                    <div class="text-white">
+                        <h2 class="text-5xl" id="modalTitle"></h2>
+                        <p class="font-sub mt-2" id="modalDescription"></p>
+                    </div>
+                </div>
+            </article>
+        </section>
         <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Portfolio</h2>
         <section class="container px-4 mx-auto grid grid-gap-10 grid-cols-1 mt-10">
             <section class="mb-10">
                 <p class="text-2xl font-medium text-center">Adobe Illustrator</p>
                 <article class="swiper-container swiper-illustrator mt-4">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" onclick="showModal('hi')">
                             <div class="h-72 bg-gray-500 w-full"></div>
                         </div>
                         <div class="swiper-slide">
@@ -127,7 +142,6 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
-
                         </div>
                         <div class="swiper-slide">
                             <div class="h-72 bg-gray-500 w-full"></div>
