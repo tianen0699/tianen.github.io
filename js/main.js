@@ -314,12 +314,24 @@ function getModal() {
     return document.getElementById('modal');
 }
 
-function sendForm() {
+function sendForm(e) {
+    e.preventDefault();
+
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let enquiry = document.getElementById("enquiry").value;
     let message = document.getElementById('message').value;
+
+    // console.log(`
+    //     name: ${name} <br>
+    //     email: ${email} <br>
+    //     subject: ${subject} <br>
+    //     enquiry: ${enquiry} <br>
+    //     message: ${message}
+    // `);
+
+
 
     Email.send({
         SecureToken: "d806f3f2-c93f-4efc-b2e7-5a828f022f52",
@@ -330,13 +342,15 @@ function sendForm() {
             ===== <br>
             Name: ${name}<br>
             Email: ${email}<br><br>
-
+    
             Subject: ${subject}<br>
             Enquiry Type: ${enquiry}<br><br?
-
+    
             Message: ${message}<br>
         `
-    }).then(
-        message => alert("Sent! I will get back to you speedy quick.")
-    )
+        }).then(
+            message => alert("Sent! I will get back to you speedy quick.")
+        )
+            
+    return false;
 }
