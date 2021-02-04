@@ -1,4 +1,10 @@
 let data = {
+    about: [
+        {
+            title: "About Me",
+            link: "https://www.youtube.com/embed/tY4A_ScrWVo",
+        }
+    ],
     illustrator: [
         {
             title: "Mascot for a Diploma - School Project",
@@ -68,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initPortfolio() {
+    let aboutCon = document.getElementById("swiper-wrapper-about");
     let illustratorCon = document.getElementById("swiper-wrapper-illustrator");
     let photoshopCon = document.getElementById("swiper-wrapper-photoshop");
     let premiereProCon = document.getElementById("swiper-wrapper-premierepro");
@@ -75,6 +82,20 @@ function initPortfolio() {
 
     let count = 0;
     let toAppend = "";
+
+    data.about.forEach(x => {
+        toAppend += `
+        <div class="swiper-slide relative" onclick="showModal('0-${count}')">
+            <div class="h-full bg-gray-500 w-full">
+            <iframe id="modalVid" src="${x.link}" frameborder="0" class="w-full h-full object-cover"></iframe>
+            </div>
+        </div>
+        `;
+        count++;
+    })
+    aboutCon.innerHTML = toAppend;
+
+    toAppend = ""; count = 0;
     data.illustrator.forEach(x => {
         toAppend += `
         <div class="swiper-slide" onclick="showModal('0-${count}')">
@@ -291,4 +312,31 @@ function hideModal() {
 
 function getModal() {
     return document.getElementById('modal');
+}
+
+function sendForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let enquiry = document.getElementById("enquiry").value;
+    let message = document.getElementById('message').value;
+
+    Email.send({
+        SecureToken: "d806f3f2-c93f-4efc-b2e7-5a828f022f52",
+        To: "tianen0699@gmail.com",
+        From: "tianen0699@gmail.com",
+        Subject: "tianen.github.io | New Contact Form - " + name,
+        Body: `
+            ===== <br>
+            Name: ${name}<br>
+            Email: ${email}<br><br>
+
+            Subject: ${subject}<br>
+            Enquiry Type: ${enquiry}<br><br?
+
+            Message: ${message}<br>
+        `
+    }).then(
+        message => alert("Sent! I will get back to you speedy quick.")
+    )
 }
