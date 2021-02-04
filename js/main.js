@@ -163,10 +163,12 @@ function initSwipers() {
             bulletActiveClass: 'opacity-100'
         },
         navigation: {
-            nextEl: 'swiper-button-next-about',
-            prevEl: 'swiper-button-prev-about'
+            nextEl: '.swiper-button-next-about',
+            prevEl: '.swiper-button-prev-about'
         },
         watchOverflow: true,
+        observer: true, 
+        observeParents: true
     })
 
     const swiperIllustrator = new Swiper('.swiper-illustrator', {
@@ -175,8 +177,8 @@ function initSwipers() {
             bulletActiveClass: 'opacity-100'
         },
         navigation: {
-            nextEl: 'swiper-button-next-illustrator',
-            prevEl: 'swiper-button-prev-illustrator'
+            nextEl: '.swiper-button-next-illustrator',
+            prevEl: '.swiper-button-prev-illustrator'
         },
         slidesPerView: 1,
         spaceBetween: 10,
@@ -190,6 +192,8 @@ function initSwipers() {
             },
         },
         watchOverflow: true,
+        observer: true, 
+        observeParents: true
     });
 
     const swiperPhotoshop = new Swiper('.swiper-photoshop', {
@@ -198,8 +202,8 @@ function initSwipers() {
             bulletActiveClass: 'opacity-100'
         },
         navigation: {
-            nextEl: 'swiper-button-next-photoshop',
-            prevEl: 'swiper-button-prev-photoshop'
+            nextEl: '.swiper-button-next-photoshop',
+            prevEl: '.swiper-button-prev-photoshop'
         },
         slidesPerView: 1,
         spaceBetween: 10,
@@ -213,6 +217,8 @@ function initSwipers() {
             },
         },
         watchOverflow: true,
+        observer: true, 
+        observeParents: true
     });
 
     const swiperPremierepro = new Swiper('.swiper-premierepro', {
@@ -221,8 +227,8 @@ function initSwipers() {
             bulletActiveClass: 'opacity-100'
         },
         navigation: {
-            nextEl: 'swiper-button-next-premierepro',
-            prevEl: 'swiper-button-prev-premierepro'
+            nextEl: '.swiper-button-next-premierepro',
+            prevEl: '.swiper-button-prev-premierepro'
         },
         slidesPerView: 1,
         spaceBetween: 10,
@@ -236,6 +242,8 @@ function initSwipers() {
             },
         },
         watchOverflow: true,
+        observer: true, 
+        observeParents: true
     });
     
     const swiperc4d = new Swiper('.swiper-c4d', {
@@ -244,8 +252,8 @@ function initSwipers() {
             bulletActiveClass: 'opacity-100'
         },
         navigation: {
-            nextEl: 'swiper-button-next-c4d',
-            prevEl: 'swiper-button-prev-c4d'
+            nextEl: '.swiper-button-next-c4d',
+            prevEl: '.swiper-button-prev-c4d'
         },
         slidesPerView: 1,
         spaceBetween: 10,
@@ -259,6 +267,8 @@ function initSwipers() {
             },
         },
         watchOverflow: true,
+        observer: true, 
+        observeParents: true
     });
 }
 
