@@ -88,7 +88,7 @@ function initPortfolio() {
         toAppend += `
         <div class="swiper-slide relative" onclick="showModal('0-${count}')">
             <div class="h-full bg-gray-500 w-full">
-            <iframe id="modalVid" src="${x.link}" frameborder="0" class="w-full h-full object-cover"></iframe>
+            <iframe id="modalVid" src="${x.link}" frameborder="0" allowfullscreen class="w-full h-full object-cover"></iframe>
             </div>
         </div>
         `;
