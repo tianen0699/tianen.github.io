@@ -63,6 +63,7 @@ let data = {
             description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
             image: "image/c4d/theaffair.webp",
             video: true,
+            link: "https://www.youtube.com/embed/a5R3pDMLIDI"
         },
     ]
 }
@@ -291,7 +292,7 @@ function showModal(x) {
     else if (type == 2) temp = data.premierePro[content];
     else if (type == 3) temp = data.c4d[content];
 
-    console.log(temp);
+    // console.log(temp);
 
     let modal = getModal();
     let title = document.getElementById('modalTitle');
@@ -304,6 +305,8 @@ function showModal(x) {
     
     if (temp.video) {
         video.src = temp.link;
+        // console.log(video);
+        // console.log(temp.link);
         image.classList.add("hidden");
         video.classList.remove("hidden");
     }
