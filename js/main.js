@@ -17,7 +17,7 @@ let data = {
             description: "This animation is about how 2 classmates ended up being friends after a 100m race. The characters were made on Adobe Illustrator and animated on Adobe Animate.",
             image: "image/illustrator/100m.webp",
             video: true,
-            link: "https://www.youtube.com/embed/LC86GqiSRos",
+            link: "http://www.youtube.com/embed/LC86GqiSRos",
         },
         {
             title: "Illustration of Me",
@@ -40,21 +40,21 @@ let data = {
             description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
             image: "image/premierepro/theaffair.webp",
             video: true,
-            link: "https://www.youtube.com/embed/a5R3pDMLIDI"
+            link: "http://www.youtube.com/embed/a5R3pDMLIDI"
         },
         {
             title: "To dad (A short film) - School Project",
             description: "This is a short film that I filmed with my group mates. It is about a father who would do anything for this daughter.",
             image: "image/premierepro/todad.webp",
             video: true,
-            link: "https://www.youtube.com/embed/F7luliId590"
+            link: "http://www.youtube.com/embed/F7luliId590"
         },
         {
             title: "Travelogue Video - School Project",
             description: "To make this video, I went around in Singapore, mainly the attractions to take video. This video is to show how beautiful Singapore is.",
             image: "image/premierepro/sgattraction.webp",
             video: true,
-            link: "https://www.youtube.com/embed/BIQ8SwmoA38"
+            link: "http://www.youtube.com/embed/BIQ8SwmoA38"
         },
     ],
     c4d: [
@@ -63,7 +63,7 @@ let data = {
             description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
             image: "image/c4d/theaffair.webp",
             video: true,
-            link: "https://www.youtube.com/embed/a5R3pDMLIDI"
+            link: "http://www.youtube.com/embed/a5R3pDMLIDI"
         },
     ]
 }
@@ -84,11 +84,12 @@ function initPortfolio() {
     let count = 0;
     let toAppend = "";
 
+    console.log(data.about);
     data.about.forEach(x => {
         toAppend += `
-        <div class="swiper-slide relative" onclick="showModal('0-${count}')">
+        <div class="swiper-slide">
             <div class="h-full bg-gray-500 w-full">
-            <iframe id="modalVid" src="${x.link}" frameborder="0" allowfullscreen class="w-full h-full object-cover"></iframe>
+            <iframe src="${x.link}" frameborder="0" allowfullscreen class="w-full h-full block"></iframe>
             </div>
         </div>
         `;
@@ -99,10 +100,10 @@ function initPortfolio() {
     toAppend = ""; count = 0;
     data.illustrator.forEach(x => {
         toAppend += `
-        <div class="swiper-slide" onclick="showModal('0-${count}')">
+        <div class="swiper-slide cursor-pointer customHover" onclick="showModal('0-${count}')">
             <div class="h-72 bg-gray-500 w-full relative">
                 <img src="${x.image}" alt=${x.title}" class="h-full w-full object-cover">
-                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center">${x.title}</p>
+                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center flex justify-center items-center">${x.title}</p>
             </div>
         </div>
         `;
@@ -113,10 +114,10 @@ function initPortfolio() {
     toAppend = ""; count = 0;
     data.photoshop.forEach(x => {
         toAppend += `
-        <div class="swiper-slide" onclick="showModal('1-${count}')">
+        <div class="swiper-slide cursor-pointer customHover" onclick="showModal('1-${count}')">
             <div class="h-72 bg-gray-500 w-full relative">
                 <img src="${x.image}" alt=${x.title}" class="h-full w-full object-cover">
-                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center">${x.title}</p>
+                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center flex justify-center items-center">${x.title}</p>
             </div>
         </div>
         `;
@@ -127,10 +128,10 @@ function initPortfolio() {
     toAppend = ""; count = 0;
     data.premierePro.forEach(x => {
         toAppend += `
-        <div class="swiper-slide" onclick="showModal('2-${count}')">
+        <div class="swiper-slide cursor-pointer customHover" onclick="showModal('2-${count}')">
             <div class="h-72 bg-gray-500 w-full relative">
                 <img src="${x.image}" alt=${x.title}" class="h-full w-full object-cover">
-                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center">${x.title}</p>
+                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center flex justify-center items-center">${x.title}</p>
             </div>
         </div>
         `;
@@ -141,10 +142,10 @@ function initPortfolio() {
     toAppend = ""; count = 0;
     data.c4d.forEach(x => {
         toAppend += `
-        <div class="swiper-slide" onclick="showModal('3-${count}')">
+        <div class="swiper-slide cursor-pointer customHover" onclick="showModal('3-${count}')">
             <div class="h-72 bg-gray-500 w-full relative">
                 <img src="${x.image}" alt=${x.title}" class="h-full w-full object-cover">
-                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center">${x.title}</p>
+                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center flex justify-center items-center">${x.title}</p>
             </div>
         </div>
         `;
@@ -161,21 +162,19 @@ function initSwipers() {
         loop: true,
         pagination: {
             el: '.swiper-pagination-about',
-            bulletActiveClass: 'opacity-100'
+            bulletActiveClass: 'opacity-100 bg-custom'
         },
         navigation: {
             nextEl: '.swiper-button-next-about',
             prevEl: '.swiper-button-prev-about'
         },
         watchOverflow: true,
-        observer: true, 
-        observeParents: true
     })
 
     const swiperIllustrator = new Swiper('.swiper-illustrator', {
         pagination: {
             el: '.swiper-pagination-illustrator',
-            bulletActiveClass: 'opacity-100'
+            bulletActiveClass: 'opacity-100 bg-custom'
         },
         navigation: {
             nextEl: '.swiper-button-next-illustrator',
@@ -200,7 +199,7 @@ function initSwipers() {
     const swiperPhotoshop = new Swiper('.swiper-photoshop', {
         pagination: {
             el: '.swiper-pagination-photoshop',
-            bulletActiveClass: 'opacity-100'
+            bulletActiveClass: 'opacity-100 bg-custom'
         },
         navigation: {
             nextEl: '.swiper-button-next-photoshop',
@@ -225,7 +224,7 @@ function initSwipers() {
     const swiperPremierepro = new Swiper('.swiper-premierepro', {
         pagination: {
             el: '.swiper-pagination-premierepro',
-            bulletActiveClass: 'opacity-100'
+            bulletActiveClass: 'opacity-100 bg-custom'
         },
         navigation: {
             nextEl: '.swiper-button-next-premierepro',
@@ -250,7 +249,7 @@ function initSwipers() {
     const swiperc4d = new Swiper('.swiper-c4d', {
         pagination: {
             el: '.swiper-pagination-c4d',
-            bulletActiveClass: 'opacity-100'
+            bulletActiveClass: 'opacity-100 bg-custom'
         },
         navigation: {
             nextEl: '.swiper-button-next-c4d',
@@ -302,11 +301,11 @@ function showModal(x) {
 
     title.innerHTML = temp.title;
     description.innerHTML = temp.description;
-    
+
+    video.src += ' ';
+    console.log(video);
     if (temp.video) {
         video.src = temp.link;
-        // console.log(video);
-        // console.log(temp.link);
         image.classList.add("hidden");
         video.classList.remove("hidden");
     }
@@ -319,6 +318,8 @@ function showModal(x) {
 }
 
 function hideModal() {
+    let video = document.getElementById('modalVid');
+    video.src = " ";
     let modal = getModal();
     modal.classList.toggle("hidden");
 }

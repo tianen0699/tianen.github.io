@@ -19,10 +19,10 @@
                     <img src="image/hamburger.png" alt="hamburger" class="w-full h-full object-cover">
                 </span>
                 <nav class="hidden flex-col w-full md:w-1/2 2xl:w-1/3 md:flex md:flex-row justify-center text-center md:text-left md:justify-between" id="menu">
-                    <a href="#about" class="text-lg block md:w-auto py-4 border-b md:border-0">About</a>
-                    <a href="#portfolio" class="text-lg block md:w-auto py-4 border-b md:border-0">Portfolio</a>
-                    <a href="#services" class="text-lg block md:w-auto py-4 border-b md:border-0">Services</a>
-                    <a href="#contact" class="text-lg block md:w-auto pt-4">Contact</a>
+                    <a href="#about" class="block md:w-auto my-4 py-4 md:py-1 border-b border-transparent hover:border-black">About</a>
+                    <a href="#portfolio" class="block md:w-auto my-4 py-4 md:py-1 border-b border-transparent hover:border-black">Portfolio</a>
+                    <a href="#services" class="block md:w-auto my-4 py-4 md:py-1 border-b border-transparent hover:border-black">Services</a>
+                    <a href="#contact" class="block md:w-auto my-4 py-4 md:py-1 border-b border-transparent hover:border-black">Contact</a>
                 </nav>
             </div>
         </header>
@@ -31,9 +31,9 @@
                 <div class="text-center md:text-left">
                     <h1 class="text-8xl">HELLO</h1>
                     <p class="font-sub text-lg md:w-3/4 mt-6">I am Tian En</p>
-                    <p class="font-sub text-lg md:w-3/4 mt-1">I design, animate and edit</p>
-                    <div class="mt-10">
-                        <a id="contactBtn" href="#contact" class="px-12 py-3 border-black border text-lg">CONTACT ME</a>
+                    <p class="font-sub text-lg md:w-3/4 mt-2">I design, animate and edit.</p>
+                    <div class="mt-12">
+                        <a id="contactBtn" href="#contact" class="px-16 py-4 text-lg font-sub bg-custom font-medium rounded-md shadow-md">CONTACT ME</a>
                     </div>
                 </div>
             </article>
@@ -44,9 +44,9 @@
             </article>
 
         </section>
-        <a href="#home" class="fixed h-16 w-16 bottom-8 right-8 z-50">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 512 512" fill="black" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <a href="#home" class="fixed h-12 w-12 bottom-8 right-8 z-50">
+            <svg id="startIcon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" fill="#d6d2c4" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                <path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.853,256-256S397.167,0,256,0z M256,472.341
                    c-119.275,0-216.341-97.046-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.046,216.341,216.341
                    S375.275,472.341,256,472.341z"/>
@@ -60,23 +60,27 @@
     <main class="md:min-h-screen py-20" style="background: rgba(247,218,217, 0.5);" id="about">
         <section class="container px-4 mx-auto flex justify-center items-center h-full">
             <section>
-                <h2 class="text-5xl text-center md:text-left">About</h2>
+                <div>
+                    <h2 class="text-center md:text-left text-xs">Information</h2>
+                    <p class="text-center md:text-left text-3xl font-sub font-medium">ABOUT ME</p>
+                </div>
                 <section class="grid grid-cols-1 md:grid-cols-11 gap-20 md:gap-10 mt-20">
                     <article class="md:col-span-5">
                         <div class="w-full flex justify-center md:block">
                             <img src="image/Group 17.png" class="w-1/2 md:w-full h-full object-cover">
                         </div>
-                        <p class="font-sub mt-8 text-center md:text-left">Hi! I am Tian En, a soon to be graduate of Nanyang Polytechnic. I aspire to create animations and illustrations. </p>
-                        <div class="mt-8 md:mt-10 flex justify-center">
-                            <a id="contactBtn" href="#contact" class="px-12 py-3 border-black border text-lg">contact me</a>
+                        <p class="font-sub mt-8 text-center text-sm">Hi! I am Tian En, a soon to be graduate of Nanyang Polytechnic!</p>
+                        <p class="font-sub mt-2 text-center text-sm">I aspire to create beautiful animations and illustrations!</p>
+                        <div class="mt-8 flex justify-center">
+                            <a id="contactBtn" href="#contact" class="px-16 py-4 text-lg font-sub bg-custom font-medium rounded-md shadow-md">CONTACT ME</a>
                         </div>
                     </article>
                     <article class="hidden md:flex justify-center items-center pb-40">
-                        <div class="h-full w-0.5 bg-black bg-opacity-500"></div>
+                        <div class="h-full w-0.5 bg-black bg-opacity-25"></div>
                     </article>
                     <article class="md:col-span-5">
                         <div class="w-full flex justify-center">
-                            <div class="swiper-container swiper-about md:w-full xl:h-96 lg:h-72 h-40">
+                            <div class="swiper-container swiper-about md:w-full xl:h-96 h-72">
                                 <div class="swiper-wrapper h-full w-full" id="swiper-wrapper-about">
                                 </div>
                                 <div class="swiper-pagination swiper-pagination-about"></div>
@@ -85,7 +89,7 @@
                             </div>
 
                         </div> <!-- This is the video! -->
-                        <p class="font-sub mt-2 text-center font-thin text-sm">Watch these videos to know more about me and how I came up with ideas for my work!</p>
+                        <p class="font-sub mt-2 text-center font-thin text-xs opacity-75">Watch these videos to know more about me and how I came up with ideas for my work!</p>
                     </article>
                 </section>
             </section>
@@ -97,7 +101,7 @@
             <article class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 md:h-3/4">
                 <div class="flex items-center">
                     <img id="modalImg" src="" alt="" class="max-h-custom w-full object-cover">
-                    <iframe id="modalVid" src="https://youtube.com/embed/" frameborder="1" allowfullscreen class="w-full md:h-500 object-cover"></iframe>
+                    <iframe id="modalVid" src="https://youtube.com/embed/" frameborder="1" allowfullscreen class="block h-96 w-full object-cover"></iframe>
                 </div>
                 <!-- <img id="modalImg"> -->
                 <div class="flex items-center">
@@ -108,10 +112,13 @@
                 </div>
             </article>
         </section>
-        <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Portfolio</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-center md:text-left text-xs">My Works</h2>
+            <p class="text-center md:text-left text-3xl font-sub font-medium">MY PORTFOLIO</p>
+        </div>
         <section class="container px-4 mx-auto grid grid-gap-10 grid-cols-1 mt-10">
-            <section class="mb-10">
-                <p class="text-2xl font-medium text-center">Adobe Illustrator</p>
+            <section class="mb-14">
+                <p class="text-xl font-medium text-center">Adobe Illustrator</p>
                 <article class="swiper-container swiper-illustrator mt-4">
                     <div class="swiper-wrapper" id="swiper-wrapper-illustrator">
                     </div>
@@ -120,8 +127,8 @@
                     <div class="swiper-button-next swiper-button-next-illustrator"></div>
                 </article>
             </section>
-            <section class="mb-10">
-                <p class="text-2xl font-medium text-center">Adobe Photoshop</p>
+            <section class="mb-14">
+                <p class="text-xl font-medium text-center">Adobe Photoshop</p>
                 <article class="swiper-container swiper-photoshop mt-4">
                     <div class="swiper-wrapper" id="swiper-wrapper-photoshop">
                     </div>
@@ -130,8 +137,8 @@
                     <div class="swiper-button-next swiper-button-next-photoshop"></div>
                 </article>
             </section>
-            <section class="mb-10">
-                <p class="text-2xl font-medium text-center">Adobe Premiere Pro</p>
+            <section class="mb-14">
+                <p class="text-xl font-medium text-center">Adobe Premiere Pro</p>
                 <article class="swiper-container swiper-premierepro mt-4">
                     <div class="swiper-wrapper" id="swiper-wrapper-premierepro">
                     </div>
@@ -153,57 +160,63 @@
         </section>
     </main>
     <main class="py-20" style="background: rgba(247,218,217, 0.5);" id="services">
-        <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Services</h2>
+        <div class="container mx-auto px-4">
+            <h2 class="text-center md:text-left text-xs">What I do</h2>
+            <p class="text-center md:text-left text-3xl font-sub font-medium">MY SERVICES</p>
+        </div>        
         <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10 text-center lg:text-left">
-            <article class="bg-white">
-                <div class="h-72 bg-gray-500 w-full">
-                    <img src="image/animate.png" class="w-full h-full object-cover">
+            <article class="bg-white rounded-md shadow-md">
+                <div class="h-72 w-full">
+                    <img src="image/animate.png" class="w-full h-full object-cover rounded-md">
                 </div>
                 <div class="m-8">
-                    <h4 class="text-2xl">animations</h4>
+                    <h4 class="text-xl">animations</h4>
                     <p class="font-sub mt-4 font-thin text-sm">I am proficient in 2D and 3D animations and I am willing to try different types of genres with that I can assure that the animations are completed with both passion and creativity.</p>
                     <div class="mt-8">
-                        <a id="contactBtn" href="#contact" class="px-12 py-3 border-black border text-lg">contact me</a>
+                        <a id="contactBtn" href="#contact" class="px-16 py-4 text-lg font-sub bg-custom font-medium rounded-md shadow-md">CONTACT ME</a>
                     </div>
                 </div>
             </article>
-            <article class="bg-white">
-                <div class="h-72 bg-gray-500 w-full">
-                    <img src="image/pr.png" class="w-full h-full object-cover border-b">
+            <article class="bg-white rounded-md shadow-md">
+                <div class="h-72 w-full">
+                    <img src="image/pr.png" class="w-full h-full object-cover border-b rounded-md">
                 </div>
                 <div class="m-8">
-                    <h4 class="text-2xl">video editing</h4>
+                    <h4 class="text-xl">video editing</h4>
                     <p class="font-sub mt-4 font-thin text-sm">In my course I experienced heavy usage of video editing softwares, such as Adobe Premiere Pro, Audition and After Effects. I am able to provide passionate and creative video editing styles.</p>
                     <div class="mt-8">
-                        <a id="contactBtn" href="#contact" class="px-12 py-3 border-black border text-lg">contact me</a>
+                        <a id="contactBtn" href="#contact" class="px-16 py-4 text-lg font-sub bg-custom font-medium rounded-md shadow-md">CONTACT ME</a>
                     </div>
                 </div>
             </article>
-            <article class="bg-white">
-                <div class="h-72 bg-gray-500 w-full">
-                    <img src="image/ai.png" class="w-full h-full object-cover">
+            <article class="bg-white rounded-md shadow-md">
+                <div class="h-72 w-full">
+                    <img src="image/ai.png" class="w-full h-full object-cover rounded-md">
                 </div>
                 <div class="m-8">
-                    <h4 class="text-2xl">designing</h4>
-                    <p class="font-sub mt-4 font-thin text-sm">From illustrations to web design, I can cater for a range of needs. My design style is mostly contemporary, with attention to details. I can assure that the design is approached with passion, creativity and eficiency. Contact me to find out what designs I do.</p>
+                    <h4 class="text-xl">designing</h4>
+                    <p class="font-sub mt-4 font-thin text-sm">From illustrations to web design, I can cater for a range of needs. My design style is mostly contemporary, with attention to details. I can assure that the design is approached with passion, creativity and eficiency.</p>
                     <div class="mt-8">
-                        <a id="contactBtn" href="#contact" class="px-12 py-3 border-black border text-lg">contact me</a>
+                        <a id="contactBtn" href="#contact" class="px-16 py-4 text-lg font-sub bg-custom font-medium rounded-md shadow-md">CONTACT ME</a>
                     </div>
                 </div>
             </article>
         </section>
     </main>
     <main id="contact" class="py-20" style="background: rgba(247,218,217, 0.25);">
-        <h2 class="container mx-auto px-4 text-5xl text-center md:text-left">Contact</h2>
-        <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-40 px-40 mt-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center md:text-left text-xs">Work With Me</h2>
+            <p class="text-center md:text-left text-3xl font-sub font-medium">CONTACT ME</p>
+        </div>         
+        <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-40 px-40 mt-10">
             <article class="flex items-center">
                 <div>
                     <div>
                         <img src="image/Group 21.png" alt="nothing">
                     </div>
-                    <div class="mt-4">
-                        <div class="flex">
-                            <div class="h-6 w-6 mr-4">
+                    <div class="mt-6 text-center">
+                        <div class="flex justify-center items-center">
+                            <div class="h-5 w-5 mr-4">
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M485.743,85.333H26.257C11.815,85.333,0,97.148,0,111.589V400.41c0,14.44,11.815,26.257,26.257,26.257h459.487
                     c14.44,0,26.257-11.815,26.257-26.257V111.589C512,97.148,500.185,85.333,485.743,85.333z M475.89,105.024L271.104,258.626
                     c-3.682,2.802-9.334,4.555-15.105,4.529c-5.77,0.026-11.421-1.727-15.104-4.529L36.109,105.024H475.89z M366.5,268.761
@@ -212,58 +225,58 @@
                     c7.871,5.862,17.447,8.442,26.912,8.468c9.452-0.02,19.036-2.6,26.912-8.468l209.394-157.046v275.534L381.807,256.367
                     c-3.42-4.227-9.623-4.877-13.844-1.457C363.729,258.329,363.079,264.534,366.5,268.761z"/> </svg>
                             </div>
-                            <p>tianen0699@gmail.com</p>
+                            <a href="mailto:tianen0699@gmail.com" class="font-sub font-thin text-sm">tianen0699@gmail.com</a>
                         </div>
-                        <div class="flex mt-2">
-                            <div class="h-6 w-6 mr-4">
+                        <div class="flex justify-center items-center mt-2">
+                            <div class="h-5 w-5 mr-4">
                                 <svg id="Layer_1" enable-background="new 0 0 512.021 512.021" viewBox="0 0 512.021 512.021" xmlns="http://www.w3.org/2000/svg"><g><path d="m367.988 512.021c-16.528 0-32.916-2.922-48.941-8.744-70.598-25.646-136.128-67.416-189.508-120.795s-95.15-118.91-120.795-189.508c-8.241-22.688-10.673-46.108-7.226-69.612 3.229-22.016 11.757-43.389 24.663-61.809 12.963-18.501 30.245-33.889 49.977-44.5 21.042-11.315 44.009-17.053 68.265-17.053 7.544 0 14.064 5.271 15.645 12.647l25.114 117.199c1.137 5.307-.494 10.829-4.331 14.667l-42.913 42.912c40.482 80.486 106.17 146.174 186.656 186.656l42.912-42.913c3.838-3.837 9.361-5.466 14.667-4.331l117.199 25.114c7.377 1.581 12.647 8.101 12.647 15.645 0 24.256-5.738 47.224-17.054 68.266-10.611 19.732-25.999 37.014-44.5 49.977-18.419 12.906-39.792 21.434-61.809 24.663-6.899 1.013-13.797 1.518-20.668 1.519zm-236.349-479.321c-31.995 3.532-60.393 20.302-79.251 47.217-21.206 30.265-26.151 67.49-13.567 102.132 49.304 135.726 155.425 241.847 291.151 291.151 34.641 12.584 71.866 7.64 102.132-13.567 26.915-18.858 43.685-47.256 47.217-79.251l-95.341-20.43-44.816 44.816c-4.769 4.769-12.015 6.036-18.117 3.168-95.19-44.72-172.242-121.772-216.962-216.962-2.867-6.103-1.601-13.349 3.168-18.117l44.816-44.816z"/></g></svg>
                             </div>
-                            <p>+65 8122 2426</p>
+                            <p class="font-sub font-thin text-sm">+65 8122 2426</p>
                         </div>
                     </div>
-                    <div class="flex items-center mt-6">
-                        <div class="h-6 w-6 mr-4">
+                    <div class="flex justify-center items-center mt-6">
+                        <a href="https://www.instagram.com/tiann_en/" target="_blank" class="block h-5 w-5 mr-4">
                             <svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/></svg>
-                        </div>
-                        <div class="h-6 w-6 mr-4">
+                        </a>
+                        <a href="https://www.facebook.com/sabrina.koh.05" target="_blank" class="block h-5 w-5 mr-4">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
                                     C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
                                     h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
                                     c11.028,0,20,8.972,20,20V452z"/></svg>
-                        </div>
-                        <div class="h-6 w-6">
+                        </a>
+                        <a href="https://www.linkedin.com/in/koh-tian-en/" class="block h-5 w-5">
                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/></svg>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </article>
             <article>
                 <form onsubmit="sendForm(event)">
                     <div class="flex flex-col">
-                        <label for="name" class="block text-lg">name</label>
-                        <input type="text" id="name" name="name" class="block mt-2 py-1 px-2 text-lg" required>
+                        <label for="name" class="block">name</label>
+                        <input type="text" id="name" name="name" class="block mt-2 py-1 px-2 rounded text-sm" required>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <label for="email" class="block text-lg">email</label>
-                        <input type="email" id="email" name="email" class="block mt-2 py-1 px-2 text-lg" required>
+                        <label for="email" class="block">email</label>
+                        <input type="email" id="email" name="email" class="block mt-2 py-1 px-2 rounded text-sm" required>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <label for="subject" class="block text-lg">subject</label>
-                        <input type="text" id="subject" name="subject" class="block mt-2 py-1 px-2 text-lg" required>
+                        <label for="subject" class="block">subject</label>
+                        <input type="text" id="subject" name="subject" class="block mt-2 py-1 px-2 rounded text-sm" required>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <label for="enquiry" class="block text-lg">enquiry type</label>
-                        <select name="enquiry" id="enquiry" class="block mt-2 py-1 px-2 text-lg" required>
-                            <option value="services" class="font-sub text-lg">Services</option>
-                            <option value="others" class="font-sub text-lg">Others</option>
+                        <label for="enquiry" class="block">enquiry type</label>
+                        <select name="enquiry" id="enquiry" class="block mt-2 py-1 px-2 rounded text-sm" required>
+                            <option value="services" class="font-sub">Services</option>
+                            <option value="others" class="font-sub">Others</option>
                         </select>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <label for="message" class="block text-lg">message</label>
-                        <textarea name="message" id="message" cols="30" rows="5" class="block mt-2 py-1 px-2 text-lg" required></textarea>
+                        <label for="message" class="block">message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" class="block mt-2 py-1 px-2 rounded text-sm" required></textarea>
                     </div>
                     <div class="mt-8">
-                        <button id="contactBtn" type="submit" class="px-12 py-3 border-black border text-lg">Submit</button>
+                        <button id="contactBtn" type="submit" class="px-16 py-4 text-lg font-sub bg-custom font-medium rounded-md shadow-md">SUBMIT</button>
                     </div>
                 </form>
             </article>
@@ -274,26 +287,26 @@
             <section class="text-center lg:text-left">
                 <p class="text-2xl">Tian En</p>
                 <article class="flex justify-between lg:justify-start mt-4 flex-wrap md:flex-nowrap">
-                    <a href="#about" class="text-2xl w-1/2 md:w-auto lg:mr-4">about</a>
-                    <a href="#portfolio" class="text-2xl w-1/2 md:w-auto lg:mr-4">portfolio</a>
-                    <a href="#services" class="text-2xl w-1/2 md:w-auto mt-4 md:mt-0 lg:mr-4">services</a>
-                    <a href="#contact" class="text-2xl w-1/2 md:w-auto mt-4 md:mt-0">contact</a>
+                    <a href="#about" class="w-1/2 md:w-auto lg:mr-4">about</a>
+                    <a href="#portfolio" class="w-1/2 md:w-auto lg:mr-4">portfolio</a>
+                    <a href="#services" class="w-1/2 md:w-auto mt-4 md:mt-0 lg:mr-4">services</a>
+                    <a href="#contact" class="w-1/2 md:w-auto mt-4 md:mt-0">contact</a>
                 </article>
             </section>
             <section class="text-center lg:text-right">
                 <div class="flex justify-center lg:justify-end items-center my-8 lg:my-0">
-                    <div class="h-6 w-6 mr-4">
-                        <svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/></svg>
-                    </div>
-                    <div class="h-6 w-6 mr-4">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
+                    <a href="https://www.instagram.com/tiann_en/" target="_blank" class="h-6 w-6 mr-4">
+                        <svg fill="white" viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/sabrina.koh.05" target="_blank" class="h-6 w-6 mr-4">
+                        <svg fill="white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
                                 C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
                                 h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
                                 c11.028,0,20,8.972,20,20V452z"/></svg>
-                    </div>
-                    <div class="h-6 w-6">
-                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/></svg>
-                    </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/koh-tian-en/" target="_blank" class="h-6 w-6">
+                        <svg fill="white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m160.007812 423h-70v-226h70zm6.984376-298.003906c0-22.628906-18.359376-40.996094-40.976563-40.996094-22.703125 0-41.015625 18.367188-41.015625 40.996094 0 22.636718 18.3125 41.003906 41.015625 41.003906 22.617187 0 40.976563-18.367188 40.976563-41.003906zm255.007812 173.667968c0-60.667968-12.816406-105.664062-83.6875-105.664062-34.054688 0-56.914062 17.03125-66.246094 34.742188h-.066406v-30.742188h-68v226h68v-112.210938c0-29.386718 7.480469-57.855468 43.90625-57.855468 35.929688 0 37.09375 33.605468 37.09375 59.722656v110.34375h69zm90 153.335938v-392c0-33.085938-26.914062-60-60-60h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60zm-60-412c11.027344 0 20 8.972656 20 20v392c0 11.027344-8.972656 20-20 20h-392c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20zm0 0"/></svg>
+                    </a>
                 </div>
                 <p class="mt-4 font-sub text-sm">Copyright © 2020. All Rights Reserved.</p>
             </section>

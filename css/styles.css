@@ -9,8 +9,17 @@ h1, h2, h3, h4, p, a, label {
     font-family: 'Archivo', sans-serif;
 }
 
-#contactBtn {
+.bg-custom {
     background-color: #f7dad9;
+}
+.bg-custom-dark {
+    background-color: #d6d2c4;
+}
+#contactBtn {
+    transition: all 150ms;
+}
+#contactBtn:hover {
+    background-color: #d6d2c4;
 }
 
 .swiper-container-horizontal>.swiper-scrollbar {
@@ -18,7 +27,7 @@ h1, h2, h3, h4, p, a, label {
 }
 
 .swiper-button-prev, .swiper-button-next {
-    color: black;
+    color: #f7dad9;
 }
 
 .h-500 {
@@ -26,4 +35,24 @@ h1, h2, h3, h4, p, a, label {
 }
 .max-h-custom {
     max-height: 75%;
+}
+.min-h-custom {
+    min-height: 24rem;
+}
+
+#startIcon {
+    transition: all 150ms;
+}
+#startIcon:hover {
+    fill: black;
+}
+
+.customHover p {
+    transition: all 150ms;
+}
+.customHover p {
+    height: 20%;
+}
+.customHover:hover p {
+    height: 100%;
 }
