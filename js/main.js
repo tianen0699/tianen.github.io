@@ -21,8 +21,14 @@ let data = {
         },
         {
             title: "Illustration of Me",
-            description: "I did this for my portfolio website using Adobe Illustrator",
+            description: "I did this for my portfolio website using Adobe Illustrator.",
             image: "image/illustrator/me.png",
+            video: false,
+        },
+        {
+            title: "Brand Kit - School Project",
+            description: "This was for a project that requires me to design a brand kit for a makeshift company.",
+            image: "image/illustrator/Brand_kit.png",
             video: false,
         },
     ],
@@ -303,7 +309,6 @@ function showModal(x) {
     description.innerHTML = temp.description;
 
     video.src += ' ';
-    console.log(video);
     if (temp.video) {
         video.src = temp.link;
         image.classList.add("hidden");
@@ -335,7 +340,7 @@ function sendForm(e) {
     let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let enquiry = document.getElementById("enquiry").value;
-    let message = document.getElementById('message').value;
+    let msg = document.getElementById('message').value;
 
     // console.log(`
     //     name: ${name} <br>
@@ -346,7 +351,7 @@ function sendForm(e) {
     // `);
 
 
-
+    console.log(msg);
     Email.send({
         SecureToken: "d806f3f2-c93f-4efc-b2e7-5a828f022f52",
         To: "tianen0699@gmail.com",
@@ -358,9 +363,9 @@ function sendForm(e) {
             Email: ${email}<br><br>
     
             Subject: ${subject}<br>
-            Enquiry Type: ${enquiry}<br><br?
+            Enquiry Type: ${enquiry}<br><br>
     
-            Message: ${message}<br>
+            Message: ${msg}<br>
         `
         }).then(
             message => alert("Sent! I will get back to you speedy quick.")
