@@ -17,7 +17,7 @@ let data = {
             description: "This animation is about how 2 classmates ended up being friends after a 100m race. The characters were made on Adobe Illustrator and animated on Adobe Animate.",
             image: "image/illustrator/100m.webp",
             video: true,
-            link: "http://www.youtube.com/embed/LC86GqiSRos",
+            link: "https://www.youtube.com/embed/LC86GqiSRos",
         },
         {
             title: "Illustration of Me",
@@ -46,21 +46,21 @@ let data = {
             description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
             image: "image/premierepro/theaffair.webp",
             video: true,
-            link: "http://www.youtube.com/embed/a5R3pDMLIDI"
+            link: "https://www.youtube.com/embed/a5R3pDMLIDI"
         },
         {
             title: "To dad (A short film) - School Project",
             description: "This is a short film that I filmed with my group mates. It is about a father who would do anything for this daughter.",
             image: "image/premierepro/todad.webp",
             video: true,
-            link: "http://www.youtube.com/embed/F7luliId590"
+            link: "https://www.youtube.com/embed/F7luliId590"
         },
         {
             title: "Travelogue Video - School Project",
             description: "To make this video, I went around in Singapore, mainly the attractions to take video. This video is to show how beautiful Singapore is.",
             image: "image/premierepro/sgattraction.webp",
             video: true,
-            link: "http://www.youtube.com/embed/BIQ8SwmoA38"
+            link: "https://www.youtube.com/embed/BIQ8SwmoA38"
         },
     ],
     c4d: [
@@ -69,7 +69,7 @@ let data = {
             description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
             image: "image/c4d/theaffair.webp",
             video: true,
-            link: "http://www.youtube.com/embed/a5R3pDMLIDI"
+            link: "https://www.youtube.com/embed/a5R3pDMLIDI"
         },
     ]
 }
