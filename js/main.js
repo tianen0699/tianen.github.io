@@ -3,7 +3,11 @@ let data = {
         {
             title: "About Me",
             link: "https://www.youtube.com/embed/tY4A_ScrWVo",
-        }
+        },
+        {
+            title: "A day in my life during COVID",
+            link: "https://youtube.com/embed/SZbfLqgaCYo",
+        },
     ],
     illustrator: [
         {
