@@ -4,10 +4,6 @@ let data = {
             title: "About Me",
             link: "https://www.youtube.com/embed/tY4A_ScrWVo",
         },
-        {
-            title: "A day in my life during COVID",
-            link: "https://youtube.com/embed/SZbfLqgaCYo",
-        },
     ],
     illustrator: [
         {
@@ -62,7 +58,7 @@ let data = {
         {
             title: "A day in my life during COVID - School Project",
             description: "To make this video, I took videos of my daily life during COVID and put them together",
-            image: "image/premierepro/sgattraction.webp",
+            image: "image/premierepro/adayinmylifeduringcovid.webp",
             video: true,
             link: "https://youtube.com/embed/SZbfLqgaCYo"
         },
