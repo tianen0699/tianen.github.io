@@ -60,11 +60,11 @@ let data = {
             link: "https://www.youtube.com/embed/F7luliId590"
         },
         {
-            title: "Travelogue Video - School Project",
-            description: "To make this video, I went around in Singapore, mainly the attractions to take video. This video is to show how beautiful Singapore is.",
+            title: "A day in my life during COVID - School Project",
+            description: "To make this video, I took videos of my daily life during COVID and put them together",
             image: "image/premierepro/sgattraction.webp",
             video: true,
-            link: "https://www.youtube.com/embed/BIQ8SwmoA38"
+            link: "https://youtube.com/embed/SZbfLqgaCYo"
         },
     ],
     c4d: [
