@@ -20,6 +20,12 @@ let data = {
                 image: "image/illustrator/me.png",
                 video: false,
             },
+            {
+                title: "Illustration of Jeryl",
+                description: "I made this illustration of him for his website",
+                image: "image/illustrator/jeryl.png",
+                video: false,
+            },
         ],
         // 1 - designs
         [
