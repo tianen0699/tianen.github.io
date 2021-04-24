@@ -9,46 +9,59 @@ let data = {
         // 0 - illustrations
         [
             {
-                title: "Mascot for a Diploma - School Project",
+                title: "Mascot for a Diploma",
                 description: "This project was to create a mascot for a diploma (multimedia and infocomm technology) I used Adobe Illustrator to create my mascot which is an otter.",
-                image: "image/illustrator/07_185011R_TianEn_M8_Assignment 1.jpg",
+                pics: [
+                    "image/illustrator/07_185011R_TianEn_M8_Assignment 1.jpg",      // Thumbnail image
+                ],
                 video: false,
             },
             {
                 title: "Illustration of Me",
                 description: "I did this for my portfolio website using Adobe Illustrator.",
-                image: "image/illustrator/me.png",
                 video: false,
+                pics: [
+                    "image/illustrator/me.png",
+                    // "image/illustrator/07_185011R_TianEn_M8_Assignment 1.jpg",   // Additional images
+                ]
             },
             {
                 title: "Illustration of Jeryl",
                 description: "I made this illustration of him for his website",
-                image: "image/illustrator/jeryl.png",
+                pics:[
+                    "image/illustrator/jeryl.png",
+                ],
                 video: false,
             },
         ],
         // 1 - designs
         [
             {
-                title: "Brand Kit - School Project",
+                title: "Brand Kit",
                 description: "This was for a project that requires me to design a brand kit for a makeshift company.",
-                image: "image/illustrator/Brand_kit.png",
+                pics: [
+                    "image/illustrator/Brand_kit.png"
+                ],
                 video: false,
             },
         ],
         // 2 - animations
         [
             {
-                title: "100m Race - School Project",
+                title: "100m Race",
                 description: "This animation is about how 2 classmates ended up being friends after a 100m race. The characters were made on Adobe Illustrator and animated on Adobe Animate.",
-                image: "image/illustrator/100m.webp",
+                pics: [
+                    "image/illustrator/100m.webp"
+                ],
                 video: true,
                 link: "https://www.youtube.com/embed/LC86GqiSRos",
             },
             {
-                title: "The Affair - School Project",
+                title: "The Affair",
                 description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
-                image: "image/premierepro/theaffair.webp",
+                pics: [
+                    "image/premierepro/theaffair.webp"
+                ],
                 video: true,
                 link: "https://www.youtube.com/embed/a5R3pDMLIDI"
             },
@@ -56,9 +69,11 @@ let data = {
         // 3 - clips
         [
             {
-                title: "A day in my life during COVID - School Project",
+                title: "A day in my life during COVID",
                 description: "To make this video, I took videos of my daily life during COVID and put them together",
-                image: "image/premierepro/adayinmylifeduringcovid.webp",
+                pics: [
+                    "image/premierepro/adayinmylifeduringcovid.webp"
+                ],
                 video: true,
                 link: "https://youtube.com/embed/SZbfLqgaCYo"
             },
@@ -68,73 +83,6 @@ let data = {
 
         ]
     ],
-    // illustrator: [
-    //     {
-    //         title: "Mascot for a Diploma - School Project",
-    //         description: "This project was to create a mascot for a diploma (multimedia and infocomm technology) I used Adobe Illustrator to create my mascot which is an otter.",
-    //         image: "image/illustrator/07_185011R_TianEn_M8_Assignment 1.jpg",
-    //         video: false,
-    //     },
-    //     {
-    //         title: "100m Race - School Project",
-    //         description: "This animation is about how 2 classmates ended up being friends after a 100m race. The characters were made on Adobe Illustrator and animated on Adobe Animate.",
-    //         image: "image/illustrator/100m.webp",
-    //         video: true,
-    //         link: "https://www.youtube.com/embed/LC86GqiSRos",
-    //     },
-    //     {
-    //         title: "Illustration of Me",
-    //         description: "I did this for my portfolio website using Adobe Illustrator.",
-    //         image: "image/illustrator/me.png",
-    //         video: false,
-    //     },
-    //     {
-    //         title: "Brand Kit - School Project",
-    //         description: "This was for a project that requires me to design a brand kit for a makeshift company.",
-    //         image: "image/illustrator/Brand_kit.png",
-    //         video: false,
-    //     },
-    // ],
-    // photoshop: [
-    //     {
-    //         title: "Travelogue Poster - School Project",
-    //         description: "I went to Singapore’s tourist attractions to take pictures, then took some components from each picture to make this poster.",
-    //         image: "image/photoshop/7_185011R_KohTianEn_M8_Proj_RGB.jpg",
-    //         video: false,
-    //     },
-    // ],
-    // premierePro: [
-    //     {
-    //         title: "The Affair - School Project",
-    //         description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
-    //         image: "image/premierepro/theaffair.webp",
-    //         video: true,
-    //         link: "https://www.youtube.com/embed/a5R3pDMLIDI"
-    //     },
-    //     {
-    //         title: "To dad (A short film) - School Project",
-    //         description: "This is a short film that I filmed with my group mates. It is about a father who would do anything for this daughter.",
-    //         image: "image/premierepro/todad.webp",
-    //         video: true,
-    //         link: "https://www.youtube.com/embed/F7luliId590"
-    //     },
-    //     {
-    //         title: "A day in my life during COVID - School Project",
-    //         description: "To make this video, I took videos of my daily life during COVID and put them together",
-    //         image: "image/premierepro/adayinmylifeduringcovid.webp",
-    //         video: true,
-    //         link: "https://youtube.com/embed/SZbfLqgaCYo"
-    //     },
-    // ],
-    // c4d: [
-    //     {
-    //         title: "The Affair - School Project",
-    //         description: "This animation is about an affair that happened between the chess pieces of the different kingdoms. I used Cinema 4D to make the 3d models of the chess board and pieces. The animating part was also done in Cinema 4D, then to premier pro to add in the background music, subtitles and to combine all the scenes together.",
-    //         image: "image/c4d/theaffair.webp",
-    //         video: true,
-    //         link: "https://www.youtube.com/embed/a5R3pDMLIDI"
-    //     },
-    // ]
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -177,8 +125,8 @@ function initWorks(type) {
     works.forEach((x, i) => {
         toAppend += `
         <div class="cursor-pointer customHover shadow-md rounded-md" onclick="showModal('${type}-${i}')">
-            <div class="h-72 bg-gray-500 w-full relative rounded-md">
-                <img src="${x.image}" alt=${x.title}" class="h-full w-full object-cover rounded-md">
+            <div class="h-72 bg-white w-full relative rounded-md">
+                <img src="${x.pics[0]}" alt=${x.title}" class="h-full object-contain mx-auto rounded-md">
                 <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-center flex justify-center items-center rounded-md">${x.title}</p>
             </div>
         </div>
@@ -220,7 +168,6 @@ function initPortfolio() {
             </div>
         </div>
         `;
-        count++;
     })
     aboutCon.innerHTML = toAppend;
 
@@ -228,7 +175,6 @@ function initPortfolio() {
 
 function initSwipers() {
     const swiperAbout = new Swiper('.swiper-about', {
-        loop: true,
         pagination: {
             el: '.swiper-pagination-about',
             bulletActiveClass: 'opacity-100 bg-custom'
@@ -238,7 +184,7 @@ function initSwipers() {
             prevEl: '.swiper-button-prev-about'
         },
         watchOverflow: true,
-    })
+    });
 }
 
 function initMenu() {
@@ -257,7 +203,8 @@ function showModal(x) {
     let modal = getModal();
     let title = document.getElementById('modalTitle');
     let description = document.getElementById('modalDescription');
-    let image = document.getElementById('modalImg');
+    let images = document.getElementById('modalImgs');
+    let imageSwiper = document.getElementById("swiper-wrapper-modal");
     let video = document.getElementById('modalVid');
 
     title.innerHTML = work.title;
@@ -266,13 +213,35 @@ function showModal(x) {
     video.src += ' ';
     if (work.video) {
         video.src = work.link;
-        image.classList.add("hidden");
+        images.classList.add("hidden");
         video.classList.remove("hidden");
     }
     else {
-        image.src = work.image;
-        image.classList.remove("hidden");
+        let toAppend = "";
+        work.pics.forEach(p => {
+            toAppend += `
+                <div class="swiper-slide">
+                    <img id="modalImg" src="${p}" alt="${work.title}" class="max-h-custom h-full object-contain mx-auto">
+                </div>
+            `;
+        });
+        console.log(work.pics);
+        imageSwiper.innerHTML = toAppend;
+
+        images.classList.remove("hidden");
         video.classList.add("hidden");
+
+        const swiperModal = new Swiper('.swiper-modal', {
+            pagination: {
+                el: '.swiper-pagination-modal',
+                bulletActiveClass: 'opacity-100 bg-custom'
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-modal',
+                prevEl: '.swiper-button-prev-modal'
+            },
+            watchOverflow: true,
+        })
     }
     modal.classList.toggle("hidden");
 }

@@ -34,7 +34,7 @@ h1, h2, h3, h4, p, a, label, button {
     height: 36rem;
 }
 .max-h-custom {
-    max-height: 75%;
+    max-height: 75vh;
 }
 .min-h-custom {
     min-height: 24rem;
