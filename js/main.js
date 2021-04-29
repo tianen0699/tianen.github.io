@@ -56,8 +56,8 @@ let data = {
                 title: "Moomoo",
                 description: "This website was designed for the makeshift company which I did for the brand kit",
                 pics: [
-                    "image/moomoo/home.png",
-                    "image/moomoo/products.png",
+                    "image/moomoo/Home.png",
+                    "image/moomoo/Products.png",
                     "image/moomoo/Products – merch.png",
                     "image/moomoo/Products – merch – mug.png",
                     "image/moomoo/Products – milk.png",
@@ -210,6 +210,7 @@ function initSwipers() {
             prevEl: '.swiper-button-prev-about'
         },
         watchOverflow: true,
+        autoHeight: true,
     });
 }
 
@@ -240,7 +241,7 @@ function showModal(x) {
     if (work.video) {
         video.src = work.link;
         images.classList.add("hidden");
-        video.classList.remove("hidden");
+        video.parentElement.classList.remove("hidden");
     }
     else {
         let toAppend = "";
@@ -248,16 +249,15 @@ function showModal(x) {
             toAppend += `
                 <div class="swiper-slide">
                     <img id="modalImg" src="${p}" alt="${work.title}" class="max-h-custom h-full object-contain mx-auto">
-                </div>
-            `;
+                </div>`;
         });
         console.log(work.pics);
         imageSwiper.innerHTML = toAppend;
 
         images.classList.remove("hidden");
-        video.classList.add("hidden");
+        video.parentElement.classList.add("hidden");
 
-        const swiperModal = new Swiper('.swiper-modal', {
+        let swiperModal = new Swiper('.swiper-modal', {
             pagination: {
                 el: '.swiper-pagination-modal',
                 bulletActiveClass: 'opacity-100 bg-custom'
@@ -267,7 +267,10 @@ function showModal(x) {
                 prevEl: '.swiper-button-prev-modal'
             },
             watchOverflow: true,
+            observer: true,
         })
+        swiperModal.update();
+        swiperModal.navigation.update();
     }
     modal.classList.toggle("hidden");
 }
