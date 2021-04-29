@@ -33,6 +33,14 @@ let data = {
                 ],
                 video: false,
             },
+            {
+                title: "Mookata Logo",
+                description: "Designed a logo for a makeshift mookata business",
+                pics:[
+                    "image/illustrator/logo6.png",
+                ],
+                video: false,
+            },
         ],
         // 1 - designs
         [
