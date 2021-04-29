@@ -45,10 +45,28 @@ let data = {
         // 1 - designs
         [
             {
-                title: "Brand Kit",
+                title: "Brand Kit (moomoo)",
                 description: "This was for a project that requires me to design a brand kit for a makeshift company.",
                 pics: [
                     "image/illustrator/Brand_kit.png"
+                ],
+                video: false,
+            },
+            {
+                title: "Moomoo",
+                description: "This website was designed for the makeshift company which I did for the brand kit",
+                pics: [
+                    "image/moomoo/home.png",
+                    "image/moomoo/products.png",
+                    "image/moomoo/Products – merch.png",
+                    "image/moomoo/Products – merch – mug.png",
+                    "image/moomoo/Products – milk.png",
+                    "image/moomoo/Products – milk – bottle.png",
+                    "image/moomoo/Promotions.png",
+                    "image/moomoo/Promotions – 1.png",
+                    "image/moomoo/contact.png",
+                    "image/moomoo/cart.png",
+                    "image/moomoo/cart – 1.png"
                 ],
                 video: false,
             },
