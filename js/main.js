@@ -1,8 +1,7 @@
 let data = {
     about: [
         {
-            title: "About Me",
-            link: "https://www.youtube.com/embed/tY4A_ScrWVo",
+            
         },
     ],
     works: [
