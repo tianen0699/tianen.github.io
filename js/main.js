@@ -179,22 +179,22 @@ function initWorks(type) {
 
 function initPortfolio() {
 
-    let aboutCon = document.getElementById("swiper-wrapper-about");
+    // let aboutCon = document.getElementById("swiper-wrapper-about");
 
-    let count = 0;
-    let toAppend = "";
+    // let count = 0;
+    // let toAppend = "";
 
-    // console.log(data.about);
-    data.about.forEach(x => {
-        toAppend += `
-        <div class="swiper-slide">
-            <div class="h-full bg-gray-500 w-full">
-            <iframe src="${x.link}" frameborder="0" allowfullscreen class="w-full h-full block"></iframe>
-            </div>
-        </div>
-        `;
-    })
-    aboutCon.innerHTML = toAppend;
+    // // console.log(data.about);
+    // data.about.forEach(x => {
+    //     toAppend += `
+    //     <div class="swiper-slide">
+    //         <div class="h-full bg-gray-500 w-full">
+    //         <iframe src="${x.link}" frameborder="0" allowfullscreen class="w-full h-full block"></iframe>
+    //         </div>
+    //     </div>
+    //     `;
+    // })
+    // aboutCon.innerHTML = toAppend;
 
 }
 
