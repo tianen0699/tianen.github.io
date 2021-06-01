@@ -26,7 +26,7 @@ let data = {
             },
             {
                 title: "Illustration of Jeryl",
-                description: "I made this illustration of him for his website",
+                description: "I made this illustration of him on Adobe Illustrator",
                 pics:[
                     "image/illustrator/jeryl.png",
                 ],
@@ -34,7 +34,7 @@ let data = {
             },
             {
                 title: "Mookata Logo",
-                description: "Designed a logo for a makeshift mookata business",
+                description: "Designed a logo for a makeshift mookata business on Adobe Illustrator",
                 pics:[
                     "image/illustrator/logo6.png",
                 ],
@@ -45,7 +45,7 @@ let data = {
         [
             {
                 title: "Brand Kit (moomoo)",
-                description: "This was for a project that requires me to design a brand kit for a makeshift company.",
+                description: "This was for a project that requires me to design a brand kit for a makeshift company. I used Adpbe illustrator",
                 pics: [
                     "image/illustrator/Brand_kit.png"
                 ],
@@ -53,7 +53,7 @@ let data = {
             },
             {
                 title: "Moomoo",
-                description: "This website was designed for the makeshift company which I did for the brand kit",
+                description: "This website was designed for the makeshift company which I did for the brand kit, I mainly used Adobe XD and Illustrator, but mainly XD to do the sitemap, wireframe, and design",
                 pics: [
                     "image/moomoo/Home.png",
                     "image/moomoo/Products.png",
@@ -95,7 +95,7 @@ let data = {
         [
             {
                 title: "A day in my life during COVID",
-                description: "To make this video, I took videos of my daily life during COVID and put them together",
+                description: "To make this video, I took videos of my daily life during COVID and put them together using Adobe Premier Pro",
                 pics: [
                     "image/premierepro/adayinmylifeduringcovid.webp"
                 ],
@@ -105,7 +105,29 @@ let data = {
         ],
         // 4 - others
         [
-
+            {
+                title: "Photo Essay",
+                description: "Took these photos using a camera, the theme I had was nature. The images were edited on Adobe Lightroom Classic",
+                pics: [
+                    "image/photography/IMG_4486.jpg",
+                    "image/photography/IMG_4476.jpg",
+                    "image/photography/IMG_4477.jpg",
+                    "image/photography/IMG_4516.jpg",
+                    "image/photography/IMG_4546.jpg",
+                    "image/photography/IMG_4524.jpg",
+                    "image/photography/IMG_4525.jpg",
+                    "image/photography/IMG_4529.jpg",
+                    "image/photography/IMG_4567.jpg",
+                    "image/photography/IMG_2701.jpg",
+                    "image/photography/IMG_2712.jpg",
+                    "image/photography/IMG_2719.jpg",
+                    "image/photography/IMG_2736.jpg",
+                    "image/photography/IMG_2743.jpg",
+                    "image/photography/IMG_2777.jpg",
+                    "image/photography/IMG_2751.jpg"
+                ],
+                video: false,
+            },
         ]
     ],
 }
